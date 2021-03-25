@@ -41,31 +41,25 @@ body{
 }
  
 .orta{
-    margin-top: 15px;
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 1000px;
+    padding: auto;
     background: #ffff;
  
 }
+
  
-.orta-sol{
-    float: left;
-    width: 450px;
-}
- 
- 
-.orta-sag{
-    float: left;
-    margin: 15px;
-    width: 470px;
-    color: #011627;
-}
- 
-.alt{
+.footer{
+    position:static;
+    bottom: 0px;
+    left: 500px;
+    padding:15px;
     background: #ffff;
-    padding: 20px;
     text-align: center;
     color:#011627;
 }
-.alt a{
+.footer a{
      color: #011627;
 }
  
