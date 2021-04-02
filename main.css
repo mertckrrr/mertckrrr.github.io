@@ -42,12 +42,13 @@ body{
  
 .orta{
     width: auto;
-    margin-top: 0px;
+    margin-top: 25px;
     margin-bottom: 1000px;
     padding: auto;
     background: #ffff;
  
 }
+
  
 .footer{
     position:static;
