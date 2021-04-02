@@ -67,17 +67,31 @@
                     </div>
                     <div class="cont-bottom">
                         <a href="https://www.facebook.com/profile.php?id=100028981816505"><i class="fab fa-facebook-f"></i></a> 
-                        <a href="#"><i class="fab fa-twitter"></i></a> 
-                        <a href="#"><i class="fab fa-instagram"></i></a> 
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+                        <a href="https://twitter.com/mertckr"><i class="fab fa-twitter"></i></a> 
+                        <a href="https://instagram.com/mertckrrr"><i class="fab fa-instagram"></i></a> 
+                        <a href="https://linkedin.com/in/mertckrrr"><i class="fab fa-linkedin-in"></i></a> 
                     </div>
                 </div>
                 <div class="cont-right">
-                    <form action="">
+                    <!-- <form action="">
                         <input type="text" name="text" id="text" placeholder="Name Surname">
                         <input type="email" name="email" id="email" placeholder="Email">
                         <textarea name="message" id="message" rows="10" placeholder="Message"></textarea>
                         <button>Send</button>
+                    </form> -->
+
+                    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+                       <form id="contactform" action="https://formspree.io/mertckrrr@gmail.com" method="post" class="row g-0 needs-validation" novalidate>
+                         <div class="col-md-12 position-relative">
+                           <input type="text"  name="name" id="name" placeholder="İsim" class="form-control" id="validationTooltip01" required>
+                         </div>
+                        <div class="col-md-12 position-relative">
+                          <div class="input-group has-validation">
+                            <input type="email" name="email" id="email" placeholder="Email" class="form-control" id="validationTooltipEmail" required>
+                          </div>
+                        <textarea name="message" id="message" rows="10" placeholder="Message"></textarea>
+                        <button type="submit">Send</button>
+                       </form>
                     </form>
                 </div>
             </div>
