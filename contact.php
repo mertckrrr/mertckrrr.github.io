@@ -9,6 +9,18 @@ require 'path/to/PHPMailer/src/SMTP.php';
 $gittiMesaji = " ";
 
 
+
+$currentRequestMethod = $_SERVER['REQUEST_METHOD'];
+ 
+//İzin verilen yöntemleri içeren bir PHP dizisi tanımlayalım.
+$allowedRequestMethods = array('GET', 'HEAD');
+ 
+// Geçerli istek yönteminin izinli olup olmadığını kontrol edelim.
+if(!in_array($currentRequestMethod, $allowedRequestMethods)){
+    //Send a "405 Method Not Allowed" header to the client and kill the script
+    header($_SERVER["SERVER_PROTOCOL"]." 405 Method Not Allowed", true, 405);
+    exit;
+}
 if (isset($_POST["submit"])) {
 	
 	require("class.phpmailer.php");
@@ -41,6 +53,7 @@ mesajınız gönderildi...</p>";
 }
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
